@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* === Core output === */
+    "target": "ES2022", // Modern async/await and top-level await
+    "module": "NodeNext", // Keep native ES modules (import/export)
+    "moduleResolution": "NodeNext", // Works perfectly with Node ESM and TS paths
+    "outDir": "dist", // Compiled output folder
+    "rootDir": "src", // Your source code lives here
+
+    /* === Convenience === */
+    "esModuleInterop": true, // Allows default imports from CJS libs
+    "resolveJsonModule": true, // Enables `import config from './data.json'`
+    "allowSyntheticDefaultImports": true, // For smoother interop with JS modules
+    "skipLibCheck": true, // Faster compiles, fine for prototyping
+    "forceConsistentCasingInFileNames": true, // Good practice on macOS/Windows
+
+    /* === Type Safety === */
+    "strict": true, // Still keep strict type checking
+    "noUnusedLocals": false, // Loosen up for quick experiments
+    "noUnusedParameters": false, // Don’t yell when trying out APIs
+    "noImplicitAny": true,
+
+    /* === Node Compatibility === */
+    "types": ["node"], // Includes Node type definitions
+    "noEmit": true,
+    "allowImportingTsExtensions": true, // Allows `import "./foo.ts"` in ESM
+
+    /* === Source Maps (optional) === */
+    "sourceMap": true, // Debugging convenience
+    "inlineSources": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

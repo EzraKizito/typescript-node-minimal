@@ -1,0 +1,19 @@
+{
+  "name": "my-ts-app",
+  "version": "1.0.1",
+  "description": "New Typescript application with dev dependencies",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "author": "Ezra Kizito",
+  "license": "ISC",
+  "packageManager": "pnpm@10.19.0",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

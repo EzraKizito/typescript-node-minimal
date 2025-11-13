@@ -1,0 +1,29 @@
+{
+  "name": "create-my-ts",
+  "version": "1.0.1",
+  "description": "A minimal starter for my Typescript projects",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "test": "node dist/index.js test-project",
+    "clean": "rm -rf dist node_modules test-project/.git test-project"
+  },
+  "bin": {
+    "create-my-ts": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "template"
+  ],
+  "keywords": [],
+  "author": "Ezra Kizito",
+  "license": "ISC",
+  "packageManager": "pnpm@10.19.0",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "@types/node": "^24.10.1"
+  }
+}
